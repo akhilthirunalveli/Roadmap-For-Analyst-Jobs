@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>10-Day Data Analyst Roadmap</title>
+  <!-- Improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <h1 class="brand">10-Day Data Analyst Roadmap</h1>
+        <p class="tag">Build core analyst skills, one focused day at a time.</p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="panel progress-panel">
+          <h2>Progress</h2>
+          <div class="progress-wrap">
+            <div class="progress" id="progressBar"><span id="progressLabel">0%</span></div>
+          </div>
+          <div class="summary">
+            <div><strong id="doneCount">0</strong> / 10 days completed</div>
+            <button id="resetBtn" class="btn small">Reset all</button>
+          </div>
+        </div>
+
+        <div class="panel info-panel">
+          <h3>About</h3>
+          <p>This roadmap covers Excel, SQL, Python, Power BI, and Tableau with two case studies and a final portfolio project.</p>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="controls">
+          <input id="filter" type="search" placeholder="Filter days (e.g. SQL, Tableau)" />
+        </div>
+
+        <div class="cards" id="daysContainer">
+          <!-- Day cards inserted in HTML for simplicity -->
+          <article class="card" data-day="1">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="1" id="day-1" /><span class="card-title">Day 1 — Excel &amp; SQL Fundamentals</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Master advanced Excel functions: VLOOKUP, INDEX/MATCH, PivotTables, conditional formatting.</li>
+                <li>Learn foundational SQL commands: SELECT, FROM, WHERE, GROUP BY, ORDER BY, LIMIT.</li>
+                <li>Practice basic SQL queries on a public dataset.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="2">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="2" id="day-2" /><span class="card-title">Day 2 — Python &amp; SQL Joins</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Get comfortable with the <strong>pandas</strong> library in Python.</li>
+                <li>Practice reading data into a DataFrame from CSVs or Excel.</li>
+                <li>Learn basic data manipulation with pandas: filtering, sorting, handling missing values.</li>
+                <li>Master SQL JOINs: INNER, LEFT, and RIGHT JOINs to combine tables.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="3">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="3" id="day-3" /><span class="card-title">Day 3 — Data Cleaning</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Practice cleaning messy Excel datasets (removing duplicates, correcting errors, splitting text).</li>
+                <li>Use pandas to handle complex cleaning tasks: converting data types, handling outliers, standardizing text.</li>
+                <li>Utilize SQL's CASE statements and string functions for in-database data cleaning.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="4">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="4" id="day-4" /><span class="card-title">Day 4 — Power BI Fundamentals</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Download and install Power BI Desktop.</li>
+                <li>Learn the user interface and connect to a simple dataset.</li>
+                <li>Practice using <strong>Power Query</strong> for data transformation.</li>
+                <li>Understand the concept of a <strong>Star Schema</strong> for data modeling.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="5">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="5" id="day-5" /><span class="card-title">Day 5 — Tableau Fundamentals</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Download and install Tableau Public.</li>
+                <li>Learn the user interface and connect to a dataset.</li>
+                <li>Create basic visualizations: bar charts, line graphs, pie charts.</li>
+                <li>Understand the difference between <strong>Dimensions</strong> and <strong>Measures</strong>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="6">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="6" id="day-6" /><span class="card-title">Day 6 — Visualization in Power BI</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Create interactive Power BI dashboards.</li>
+                <li>Use slicers and filters to create a data story.</li>
+                <li>Learn simple <strong>DAX</strong> for creating new columns and measures.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="7">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="7" id="day-7" /><span class="card-title">Day 7 — Visualization in Tableau</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Build a multi-visualization dashboard in Tableau.</li>
+                <li>Use actions and filters to make the dashboard interactive.</li>
+                <li>Create a 'story' from your dashboard to present insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="8">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="8" id="day-8" /><span class="card-title">Day 8 — Case Study 1 (Power BI)</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Find a simple public dataset from Kaggle or data.gov.</li>
+                <li>Use Excel and SQL to clean and prepare the data.</li>
+                <li>Create a basic dashboard in Power BI to present key insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="9">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="9" id="day-9" /><span class="card-title">Day 9 — Case Study 2 (Tableau)</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Find a slightly more complex dataset.</li>
+                <li>Use <strong>Python (pandas)</strong> for the initial data cleaning and manipulation.</li>
+                <li>Build a detailed, interactive dashboard in Tableau.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-day="10">
+            <div class="card-head">
+              <label><input type="checkbox" class="day-checkbox" data-day="10" id="day-10" /><span class="card-title">Day 10 — Final Project &amp; Review</span></label>
+              <button class="toggle-tasks" aria-expanded="false">Show</button>
+            </div>
+            <div class="card-body" hidden>
+              <ul class="tasks">
+                <li>Find a new dataset and go through the full workflow: SQL, Python, and a final dashboard in either Power BI or Tableau.</li>
+                <li>This project will be your portfolio piece.</li>
+                <li>Review all projects and practice explaining your process and findings for interviews.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <footer class="page-footer">
+          <p>Progress is saved locally in your browser. Export or sync can be added on request.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
